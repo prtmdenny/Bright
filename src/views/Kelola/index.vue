@@ -10,14 +10,14 @@
                   <p>Produk</p>
                   <p>></p>
                 </div>
-                <RouterLink to="/Kelola/Produk" class="btn btn-outline-secondary w-100">Tambah Produk</RouterLink>
+                <RouterLink to="/Produk" class="btn btn-outline-secondary w-100">Tambah Produk</RouterLink>
               </div>
             <div class="w-50 border rounded p-2" style="height: 100px;">
               <div class="d-flex justify-content-between">
                 <p>Pelanggan</p>
                 <p>></p>
               </div>
-              <RouterLink to="/Kelola/Pelanggan" class="btn btn-outline-secondary w-100">Tambah Pelanggan</RouterLink>
+              <RouterLink to="/Pelanggan" class="btn btn-outline-secondary w-100">Tambah Pelanggan</RouterLink>
             </div>
           </div>
         <div class="d-flex border-start p-2" style="width: 30%;">
