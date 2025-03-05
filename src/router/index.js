@@ -5,10 +5,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/Kelola',
+      path: '/',
       children: [
         {
-          path: '',
+          path: '/',
           name: 'Kelola',
           component: () => import('../views/Kelola/index.vue'),
           meta: {
