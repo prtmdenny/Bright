@@ -5,8 +5,16 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/Profile',
       children: [
+        {
+          path: '',
+          name: 'Profile',
+          component: () => import('../views/Profile/index.vue'),
+          meta: {
+            title: 'Profile',
+          },
+        },
         {
           path: '/',
           name: 'Kelola',

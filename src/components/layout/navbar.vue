@@ -11,7 +11,9 @@
     </div>
     <div class="d-flex">
       <a href="">
-        <img width="35" class="rounded" src="@/assets/control.png" alt="Logo" />
+        <RouterLink to="/Profile" class="">
+          <img width="90" class="rounded" src="@/assets/Profile.png" alt="Logo"/>
+        </RouterLink>
       </a>
     </div>
   </div>
