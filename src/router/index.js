@@ -5,16 +5,8 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/Profile',
+      path: '/Kelola',
       children: [
-        {
-          path: '',
-          name: 'Profile',
-          component: () => import('../views/Profile/index.vue'),
-          meta: {
-            title: 'Profile',
-          },
-        },
         {
           path: '/',
           name: 'Kelola',
@@ -24,7 +16,7 @@ const router = createRouter({
           },
         },
         {
-          path: 'Produk',
+          path: '/Produk',
           name: 'Kelola Produk',
           component: () => import('../views/Kelola/produk.vue'),
           meta: {
@@ -32,11 +24,24 @@ const router = createRouter({
           },
         },
         {
-          path: 'Pelanggan',
+          path: '/Pelanggan',
           name: 'Kelola Pelanggan',
           component: () => import('../views/Kelola/pelanggan.vue'),
           meta: {
             title: 'Kelola Pelanggan',
+          },
+        },
+      ],
+    },
+    {
+      path: '/Profile',
+      children: [
+        {
+          path: '',
+          name: 'Profile',
+          component: () => import('../views/Profile/index.vue'),
+          meta: {
+            title: 'Profile',
           },
         },
       ],
@@ -52,22 +57,6 @@ const router = createRouter({
             title: 'Usaha',
           },
         },
-        // {
-        //   path: 'Produk',
-        //   name: 'Kelola Produk',
-        //   component: () => import('../views/Kelola/produk.vue'),
-        //   meta: {
-        //     title: 'Kelola Produk',
-        //   },
-        // },
-        // {
-        //   path: 'Pelanggan',
-        //   name: 'Kelola Pelanggan',
-        //   component: () => import('../views/Kelola/pelanggan.vue'),
-        //   meta: {
-        //     title: 'Kelola Pelanggan',
-        //   },
-        // },
       ],
     },
     {
@@ -81,22 +70,6 @@ const router = createRouter({
             title: 'Laba',
           },
         },
-        // {
-        //   path: 'Produk',
-        //   name: 'Kelola Produk',
-        //   component: () => import('../views/Kelola/produk.vue'),
-        //   meta: {
-        //     title: 'Kelola Produk',
-        //   },
-        // },
-        // {
-        //   path: 'Pelanggan',
-        //   name: 'Kelola Pelanggan',
-        //   component: () => import('../views/Kelola/pelanggan.vue'),
-        //   meta: {
-        //     title: 'Kelola Pelanggan',
-        //   },
-        // },
       ],
     },
   ],

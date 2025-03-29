@@ -45,6 +45,10 @@
             <hr class="hr" />
           </div>
           <p>Total: ${{ totalHarga }}</p>
+          <br>
+          <button class="btn btn-primary"> 
+            Payment
+          </button>
         </div>
       </div>
     </div>
